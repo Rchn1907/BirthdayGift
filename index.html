@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday!</title>
+    <script>
+        function checkAnswer(id){
+            if(id === 1){
+                var userAnswer = document.getElementById('answer').value.toLowerCase();
+                if(userAnswer === "28.06.2021"){
+                    document.getElementById('question1').style.display = 'none';
+                    document.getElementById('item1').style.display = 'block';
+                }else {
+                    document.getElementById('tipp1').style.display = 'block';
+                }
+            }else {
+                var userAnswer = document.getElementById('answer2').value.toLowerCase();
+                if(userAnswer === "degerlim"){
+                    document.getElementById('question2').style.display = 'none';
+                    document.getElementById('item2').style.display = 'block';
+                }else {
+                    document.getElementById('tipp2').style.display = 'block';
+                }
+            }
+        }
+    </script>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -36,35 +57,68 @@
             flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
         }
         .reference {
-            width: 48%; /* Adjust the width as needed */
+            width: 30%; /* Adjust the width as needed */
             background-color: #fff;
             padding: 10px;
             border: 1px solid #ddd;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin: 5px;
         }
+        #item1{
+            display: none;
+        }
+        #item2{
+            display: none;
+        }
     </style>
 </head>
-<body>
+<body style="background-image: url(1501_BIRTHDAY.jpg);">
 
 <div id="header">
-    <h1>Dogum Günün kutlu olsun SUIM</h1>
+    <h1>Dogum Günün kutlu olsunn SUIMMMMMMMMM</h1>
 </div>
 
 <div id="video-container">
     <!-- Replace 'YOUR_VIDEO_URL' with the actual URL of the video you want to embed -->
-    <iframe id="video" src="189018 (540p).mp4" frameborder="0" allowfullscreen></iframe>
+    <video id="video" width="300" height="200" controls>
+        <source src="Video.mov" type="video/mp4">
+    </video>
 </div>
 <div id="links-container">
     <div class="reference">
-        <h2>Überraschung Nr.1</h2>
-        <p>Gutscheincode: nckscdcks</p>
-        <a href="https://www.amazon.de/WINOMO-Modellier-Werkzeug-Sculpting-Werkzeug-schnitzen/dp/B01KXF396I/?_encoding=UTF8&pd_rd_w=eS5Vh&content-id=amzn1.sym.5c5e380f-adae-4188-be75-d3ed6ab75549%3Aamzn1.symc.adba8a53-36db-43df-a081-77d28e1b71e6&pf_rd_p=5c5e380f-adae-4188-be75-d3ed6ab75549&pf_rd_r=7FZTCE2NBMMA7GWM8TWC&pd_rd_wg=KH82M&pd_rd_r=aaf1c488-0c07-4463-a33a-9b5316798326&ref_=pd_gw_ci_mcx_mr_hp_atf_m">Klicken</a>
+        <div id="item1">
+            <h2>Überraschung Nr.1</h2>
+            <a href="https://www.amazon.de/g/KXYPQWJE4YJ28C?ref_=pe_3435531_257794311">Gutschein</a>
+            <p> Beide Gutscheine kannst du auch über unsere Mail erreichen</p>
+            <a href="https://www.amazon.de/WINOMO-Modellier-Werkzeug-Sculpting-Werkzeug-schnitzen/dp/B01KXF396I/?_encoding=UTF8&pd_rd_w=eS5Vh&content-id=amzn1.sym.5c5e380f-adae-4188-be75-d3ed6ab75549%3Aamzn1.symc.adba8a53-36db-43df-a081-77d28e1b71e6&pf_rd_p=5c5e380f-adae-4188-be75-d3ed6ab75549&pf_rd_r=7FZTCE2NBMMA7GWM8TWC&pd_rd_wg=KH82M&pd_rd_r=aaf1c488-0c07-4463-a33a-9b5316798326&ref_=pd_gw_ci_mcx_mr_hp_atf_m">Produkt</a>    
+        </div>
+        <div id="question1">
+            <h2>Wann war unser erstes Picknick? (TT.MM.JJJJ)</h2>
+            <input type="text" id="answer" placeholder="Deine Antwort">
+            <button onclick="checkAnswer(1)">Antwort überprüfen</button>
+            <p id="tipp1" style="display: none;">Tipp: Schau im Video nach</p>
+        </div>
     </div>
     <div class="reference">
-        <h2>Überraschung Nr.2</h2>
-        <p>Gutscheincode: njmcdsckc</p>
-        <a href="https://www.amazon.de/Glorex-GmbH-8075-301-lufth%C3%A4rtend/dp/B002OHXZRW/ref=pd_bxgy_img_d_sccl_1/259-1068567-4536150?pd_rd_w=MKzhF&content-id=amzn1.sym.1fd66f59-86e9-493d-ae93-3b66d16d3ee0&pf_rd_p=1fd66f59-86e9-493d-ae93-3b66d16d3ee0&pf_rd_r=AM45BCZGZDYG5WPAS4N5&pd_rd_wg=wAJUK&pd_rd_r=d1b977fe-19f9-4afb-b49b-a6fa34c86e3c&pd_rd_i=B002OHXZRW&th=1">Klicken</a>
+        <p>Tekrardan Dogum günün kutlu olsun prensesim.</p>
+        <p>Ich habe in deinem Insta gespeicherte Posts gesehen wie sehr du dich für diese ganzen Ton-Skulpturen interessiert.</p>
+        <p>Deshalb habe ich bisschen nachgedacht und dir rechts und links nun zwei Rätsel gegeben.</p>
+        <h4>Viel Spaß!</h4>
+    </div>
+    <div class="reference">
+        <div id="item2">
+            <h2>Überraschung Nr.2</h2>
+            <a href="https://www.amazon.de/g/RWJ5AFF7JQ6A8U?ref_=pe_3435531_257794311">Gutschein</a>
+            <p> Beide Gutscheine kannst du auch über unsere Mail erreichen</p>
+            <a href="https://www.amazon.de/Glorex-GmbH-8075-301-lufth%C3%A4rtend/dp/B002OHXZRW/ref=pd_bxgy_img_d_sccl_1/259-1068567-4536150?pd_rd_w=MKzhF&content-id=amzn1.sym.1fd66f59-86e9-493d-ae93-3b66d16d3ee0&pf_rd_p=1fd66f59-86e9-493d-ae93-3b66d16d3ee0&pf_rd_r=AM45BCZGZDYG5WPAS4N5&pd_rd_wg=wAJUK&pd_rd_r=d1b977fe-19f9-4afb-b49b-a6fa34c86e3c&pd_rd_i=B002OHXZRW&th=1">Produkt</a>
+       </div>
+        <div id="question2">
+            <h2>bu Emoji hangi anlama geliyor? 💎</h2>
+            <p>In deutschen Buchstaben</p>
+            <input type="text" id="answer2" placeholder="Deine Antwort">
+            <button onclick="checkAnswer(2)">Antwort überprüfen</button>
+            <p id="tipp2" style="display: none;">Tipp: Ein wort: meine wertvolle</p>
+        </div>
     </div>
 </div>
 </body>
